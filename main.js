@@ -212,6 +212,6 @@ function update(i){
                 }
             }
         }
-        document.getElementById('tbody').innerHTML += table;
+        document.getElementById('tbody').innerHTML = table;
    
     }
