@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(1, 68, 69);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.head{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 10px;
+    margin: 15px 0px;
+}
+input{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0px;
+    padding: 25px 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.713)
+}
+
+input:focus{
+    background-color: black;
+    transform: scale(1.1);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+@media(max-width:800px){
+    .container .price{
+        flex-direction: column;
+    }
+}
+#total{
+    /* margin-left: 10px; */
+    background-color: blueviolet;
+    padding: 20px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+}
+#total::before{
+    content: 'TOTAL: ';
+}
+
+button{
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color:darkblue;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.search-btn button{
+    width: 50%;
+    font-size: 16px;
+}
+button:hover{
+    background-color: blue;
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+
+.table{
+overflow-x:auto;
+}
+
+table{
+    /* width: 100%;
+    text-align: center;
+    margin: 15px 5px;
+    font-size: 20px; */
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+/* #tbody{
+    display: flex;
+    align-items: center;
+} */
+
+/* 
+@media(max-width:880){
+    .container table{
+        width: 50%;
+   
+    }
+} */
+
+/* table tbody{
+    width: 100%;
+} */
+
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    color: white;
+    /* padding: 15px 5px; */
+    text-align: left;
+    padding: 8px;
+}
+#deleteall{
+margin: 15px 5px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="head"><h1>sawada</h1> <p>YOU CAN MANAGE ALL YOUR PRODUCTS WITH THIS SYSTEM</p></div>
+    <div class="input">
+        <input type="text" placeholder="title" id="title">
+        <div class="price">
+            <input type="number" onkeyup="get_total()" placeholder="price" id="price">
+            <input type="number" onkeyup="get_total()" placeholder="taxes" id="taxes">
+            <input type="number" onkeyup="get_total()" placeholder="adds" id="adds">
+            <input type="number" onkeyup="get_total()" placeholder="discount" id="discount">
+            <small id="total"></small>
+        </div>
+        <input type="number" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+        <button id="submit"> create</button>
+    </div>
+    <div class="output">
+        <div id="bigSearch">
+            <input  onkeyup="search_product(this.value)"  type="text" placeholder="search" id="srch">
+            <div class="search-btn">
+                <button  onclick="search_ele(this.id)" id="search_title">search by title</button>
+                <button  onclick="search_ele(this.id)" id="search_category">search by category</button>
+            </div>
+        </div>
+        <div id="deleteall"></div>
+        <div class="table" >
+            <table >
+                <tr >
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tbody">
+
+
+                </tbody>
+                <!-- <tr id="tbod">
+                    <td>${i + 1}</td>
+                    <td>${data_of_products[i].title}</td>
+                    <td>${data_of_products[i].price}</td>
+                    <td>${data_of_products[i].taxes}</td>
+                    <td>${data_of_products[i].adds}</td>
+                    <td>${data_of_products[i].discount}</td>
+                    <td>${data_of_products[i].total}</td>
+                    <td>${data_of_products[i].category}</td>
+                    <td><button id="update" onclick =" update(${i})"> update </button> </td>
+                    <td><button id="del" onclick="delete_product(${i})"> delete </button> </td>
+                </tr> -->
+            </table>
+    
+    
+            <!-- <table>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                  <th>Points</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>Adam</td>
+                  <td>Johnson</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                  <td>67</td>
+                </tr>
+              </table> -->
+            </div>
+        </div>
+    </div>
+
+
+
+   
+    <script src="main.js"></script>
+</body>
+</html>
